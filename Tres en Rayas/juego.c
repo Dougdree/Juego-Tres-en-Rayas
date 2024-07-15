@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Función para imprimir la bienvenida
+// Función para imprimir el mensaje de bienvenida 
 void bienvenida() {
     // Imprime el mensaje de bienvenida
     printf("¡Bienvenido al juego de Tres en Raya!\n");
