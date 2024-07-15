@@ -5,7 +5,6 @@ void bienvenida() {
     // Imprime el mensaje de bienvenida
     printf("¡Bienvenido al juego de Tres en Raya!\n");
 }
-
 // Función para imprimir el tablero
 void imprimirTablero(char tablero[3][3]) {
     // Imprime el tablero en su estado actual
@@ -83,7 +82,6 @@ int main() {
                 turno--; // No cuenta el turno inválido
             }
         }
-        
         imprimirTablero(tablero); // Imprime el tablero final
         
         if (ganador != ' ') { // Si hay un ganador
@@ -91,7 +89,6 @@ int main() {
         } else {
             printf("¡Es un empate!\n"); // Anuncia el empate
         }
-        
         // Menú de revancha
         if (ganador != ' ') {
             printf("¿Quiere revancha? Presione 1 para revancha o 2 para salir: "); // Opción de revancha
@@ -102,7 +99,7 @@ int main() {
         
         if (opcion == 2) break; // Sale del bucle principal si la opción es 2
     }
-    
-    printf("Gracias por jugar. ¡Hasta la próxima!\n"); // Mensaje de despedida
+    //cuando el jugador gana o pierde este genera un mensaje de salida
+    printf("Gracias por jugar. ¡Hasta la próxima!\n"); 
     return 0; // Termina el programa
 }
